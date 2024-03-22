@@ -10,6 +10,9 @@ import (
 )
 
 func Diff() (string, error) {
+
+	//some test
+
 	repo, err := git.PlainOpen("./")
 	if err != nil {
 		return "", fmt.Errorf("git plain open: %w", err)
